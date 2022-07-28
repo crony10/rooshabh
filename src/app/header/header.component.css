@@ -1,58 +1,3 @@
-/* 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
-}
-
-.navbar{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 100px;
-    z-index: 10;
-    background: rgb(105, 2, 2);
-}
-
-.navbar-brand{
-    position: relative;
-    font-size: 1.5em;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.navbar-nav{
-    display: flex;
-    justify-items: center;
-    flex-wrap: wrap;
-    margin: 10px 0;
-}
-
-.nav-item{
-    list-style: none;
-    margin: 0px 10px;
-}
-
-.nav-link{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.nav-item:hover{
-    background-color: rgb(143, 243, 248);
-    font-size: 18px;
-    
-}
-
- */
-
 
  .menu_wrapper{
     background-color: white;
@@ -63,22 +8,7 @@
     width: 170px;
  }
 
- section{
-    height: 100vh;
- }
-
- button:focus,
- .navbar-toggler:focus,
- .input-group .btn:focus,
- input.form-control:focus{
-    outline: 0;
-    box-shadow: none;
- }
-
- .navbar-nav .nav-item{
-    margin: 0 10px;
- }
-
+ 
  .navbar-nav .nav-link{
     font-size: 1rem;
     font-weight: 400;
@@ -90,42 +20,7 @@
     color: rgba(0, 173, 142, 0.66);
  }
 
- .dropdown-menu .dropdown-item{
-    padding: 10px;
-    
- }
-
- .dropdown-menu .dropdown-item:hover{
-    background-color: rgba(0, 173, 142, 0.66);
-    color: rgb(244, 244, 244);
- }
-
- /* MEGAMENU */
-
- .dropdown-mega .dropdown-menu{
-    width: 100%;
-    
- }
-
- .dropdown-mega .h5{
-    padding-bottom: 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-    margin: 0;
- }
-
- .dropdown-mega .list-group-item{
-    font-size: 1rem;
-    color: black;
-    border: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-    padding: 12px 0;
- }
-
  
- .dropdown-mega .list-group-item:hover{
-    color:rgba(0, 173, 142, 0.66) ;
- }
-
  /* search */
  form input.form-control{
     border: 1px solid black;
@@ -154,3 +49,13 @@
         margin: 30px 0;
     }
  }
+
+ .dropdown-hover:hover>.dropdown-menu {
+   display: inline-block;
+   }
+   
+   .dropdown-hover>.dropdown-toggle:active {
+   /*Without this, clicking will make it sticky*/
+   pointer-events: none;
+   }
+   
