@@ -3,11 +3,14 @@
     <!-- Container wrapper -->
     <div class="container-fluid">
       <a href="/" class="navbar-brand">ROOSHABH<sub>HOSIERY</sub></a>
-
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExampleOnHover"
+       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
       <!-- Collapsible wrapper -->
       <div class="collapse navbar-collapse" id="navbarExampleOnHover">
         <!-- Left links -->
-        <ul class="navbar-nav me-auto ps-lg-0" style="padding-left: 0.15rem">
+        <ul class="navbar-nav me-auto ps-lg-0 justify-content-center" style="padding-left: 0.15rem">
           <!-- home  -->
           <li class="nav-item dropdown dropdown-hover position-static">
             <a href="/" class="nav-link">HOME</a>
@@ -16,51 +19,230 @@
           <li class="nav-item dropdown dropdown-hover position-static">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
               aria-expanded="false" data-bs-auto-close="outside">
-              MEN
+              <a class="hoverLine">
+                MEN
+              </a>
             </a>
             <!-- Dropdown menu -->
-            <div class="dropdown-menu w-50 mt-0 shadow" aria-labelledby="navbarDropdown"
+            <div class="dropdown-menu w-auto mt-0 shadow" aria-labelledby="navbarDropdown"
               style="border-top-left-radius: 0; border-top-right-radius: 0;">
               <div class="container-fluid">
                 <div class="row my-4">
                   <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5>Services</h5>
+                    <h5>INNERWEAR</h5>
                     <div class="list-group list-group-flush">
-                      <a href="" class="list-group-item list-group-item-action">1</a>
-                      <a href="" class="list-group-item list-group-item-action">2</a>
-                      <a href="" class="list-group-item list-group-item-action">3</a>
-                      <a href="" class="list-group-item list-group-item-action">4</a>
-                      <a href="" class="list-group-item list-group-item-action">5</a>
+                      <a routerLink="brief" class="list-group-item list-group-item-action">Briefs</a>
+                      <a routerLink="trunk" class="list-group-item list-group-item-action">Trunks</a>
+                      <a routerLink="boxerbrief" class="list-group-item list-group-item-action">Boxer Briefs</a>
+                      <a routerLink="innerbrief" class="list-group-item list-group-item-action">Inner Boxers</a>
                     </div>
                   </div>
                   <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                    <h5>Services</h5>
+                    <h5>APPAREL TOPS</h5>
                     <div class="list-group list-group-flush">
-                      <a href="" class="list-group-item list-group-item-action">1</a>
-                      <a href="" class="list-group-item list-group-item-action">2</a>
-                      <a href="" class="list-group-item list-group-item-action">3</a>
-                      <a href="" class="list-group-item list-group-item-action">4</a>
-                      <a href="" class="list-group-item list-group-item-action">5</a>
+                      <a routerLink="tanktop" class="list-group-item list-group-item-action">Tank Tops</a>
+                      <a routerLink="t-shirt" class="list-group-item list-group-item-action">T-shirts</a>
+                      <a routerLink="hoodie" class="list-group-item list-group-item-action">Hoodies</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>APPAREL BOTTOMS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="boxershot" class="list-group-item list-group-item-action">Boxer Shorts</a>
+                      <a routerLink="short" class="list-group-item list-group-item-action">Shorts</a>
+                      <a routerLink="bermudas" class="list-group-item list-group-item-action">Bermudas</a>
+                      <a routerLink="jogger" class="list-group-item list-group-item-action">Joggers</a>
+                      <a routerLink="trackpant" class="list-group-item list-group-item-action">Track Pants</a>
+                      <a routerLink="pyjama" class="list-group-item list-group-item-action">Pyjamas</a>
                     </div>
                   </div>
                   <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
                     <div class="list-group list-group-flush">
-                      <h5>Services</h5>
-                      <a href="" class="list-group-item list-group-item-action">1</a>
-                      <a href="" class="list-group-item list-group-item-action">2</a>
-                      <a href="" class="list-group-item list-group-item-action">3</a>
-                      <a href="" class="list-group-item list-group-item-action">4</a>
-                      <a href="" class="list-group-item list-group-item-action">5</a>
+                      <h5>VESTS</h5>
+                      <a routerLink="sleeveless" class="list-group-item list-group-item-action">Sleeveless Vests</a>
+                      <a routerLink="sleeved" class="list-group-item list-group-item-action">Sleeved Vests</a>
+                      <a routerLink="gym" class="list-group-item list-group-item-action">Gym Vests</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover position-static">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+              aria-expanded="false" data-bs-auto-close="outside">
+              <a class="hoverLine">
+                WOMEN
+              </a>
+            </a>
+            <!-- Dropdown menu -->
+            <div class="dropdown-menu w-auto mt-0 shadow" aria-labelledby="navbarDropdown"
+              style="border-top-left-radius: 0; border-top-right-radius: 0;">
+              <div class="container-fluid">
+                <div class="row my-4">
+                  <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <h5>BRAS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="everydaybra" class="list-group-item list-group-item-action">Everyday Bras</a>
+                      <a routerLink="t-shirtbra" class="list-group-item list-group-item-action">T-shirt Bras</a>
+                      <a routerLink="activebra" class="list-group-item list-group-item-action">Active Bras</a>
+                      <a routerLink="sleepbra" class="list-group-item list-group-item-action">Sleep Bras</a>
+                      <a routerLink="plussizebra" class="list-group-item list-group-item-action">Plus Size Bras</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <h5>PANTIES</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="hipsters" class="list-group-item list-group-item-action">Hipsters</a>
+                      <a routerLink="bikinis" class="list-group-item list-group-item-action">Bikinis</a>
+                      <a routerLink="shorties" class="list-group-item list-group-item-action">Shorties</a>
+                      <a routerLink="fullbrief" class="list-group-item list-group-item-action">Full Briefs</a>
+                      <a routerLink="boyleg" class="list-group-item list-group-item-action">Boy Leg</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                    <div class="list-group list-group-flush">
+                      <h5>INNERWEAR TOPS</h5>
+                      <a routerLink="croptrops" class="list-group-item list-group-item-action">Crop Trops</a>
+                      <a routerLink="camisoles" class="list-group-item list-group-item-action">Camisoles</a>
+                      <a routerLink="kurtaslips" class="list-group-item list-group-item-action">Kurta Slips</a>
+                      <a routerLink="kurtislips" class="list-group-item list-group-item-action">Kurti Slips</a>
                     </div>
                   </div>
                   <div class="col-md-6 col-lg-3">
-                    <h5>Services</h5>
+                    <h5>APPAREL TOPS</h5>
                     <div class="list-group list-group-flush">
-                      <a href="" class="list-group-item list-group-item-action">1</a>
-                      <a href="" class="list-group-item list-group-item-action">2</a>
-                      <a href="" class="list-group-item list-group-item-action">3</a>
-                      <a href="" class="list-group-item list-group-item-action">4</a>
-                      <a href="" class="list-group-item list-group-item-action">5</a>
+                      <a routerLink="tanktopsgirl" class="list-group-item list-group-item-action">Tank Tops</a>
+                      <a routerLink="t-shirtgirl" class="list-group-item list-group-item-action">T-shirts</a>
+                      <a routerLink="hoodiesgirl" class="list-group-item list-group-item-action">Hoodies</a>
+                      <a routerLink="sleepdress" class="list-group-item list-group-item-action">Sleep Dress</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>APPAREL BOTTOMS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="shortsgirl" class="list-group-item list-group-item-action">Shorts</a>
+                      <a routerLink="caprisgirl" class="list-group-item list-group-item-action">Capris</a>
+                      <a routerLink="trackpantsgirl" class="list-group-item list-group-item-action">Track Pants</a>
+                      <a routerLink="leggings" class="list-group-item list-group-item-action">Leggings</a>
+                      <a routerLink="pants" class="list-group-item list-group-item-action">Pants</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover position-static">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+              aria-expanded="false" data-bs-auto-close="outside">
+              <a class="hoverLine">
+                KIDS
+              </a>
+            </a>
+            <!-- Dropdown menu -->
+            <div class="dropdown-menu w-auto mt-0 shadow" aria-labelledby="navbarDropdown"
+              style="border-top-left-radius: 0; border-top-right-radius: 0;">
+              <div class="container-fluid">
+                <div class="row my-3">
+                  <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                    <h5>INNERWEAR FOR BOYS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="briefforboys" class="list-group-item list-group-item-action">Briefs</a>
+                      <a routerLink="trunksforboys" class="list-group-item list-group-item-action">Trunks</a>
+                      <a routerLink="vestsforboys" class="list-group-item list-group-item-action">Vests</a>
+                      <a routerLink="boxershortsforboys" class="list-group-item list-group-item-action">Boxer Shorts</a><br>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <h5>APPAREL TOPS FOR BOYS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="tanktopsboys" class="list-group-item list-group-item-action">Tank Tops</a>
+                      <a routerLink="t-shirtboys" class="list-group-item list-group-item-action">T-shirts</a>
+                      <a routerLink="hoodiesboys" class="list-group-item list-group-item-action">Hoodies</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                    <div class="list-group list-group-flush">
+                      <h5>APPAREL BOTTOMS FOR BOYS</h5>
+                      <a routerLink="shortsboys" class="list-group-item list-group-item-action">Shorts</a>
+                      <a routerLink="joggersboys" class="list-group-item list-group-item-action">Joggers</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <h5>INNERWEAR FOR GIRLS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="pantiesforgirls" class="list-group-item list-group-item-action">Panties</a>
+                      <a routerLink="blommersforgirls" class="list-group-item list-group-item-action">Bloomers</a>
+                      <a routerLink="shortiesforgirls" class="list-group-item list-group-item-action">Shorties</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <h5>APPAREL TOPS FOR GIRLS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="tanktopsforgirls" class="list-group-item list-group-item-action">Tank Tops</a>
+                      <a routerLink="t-shirtforgirls" class="list-group-item list-group-item-action">T-shirts</a>
+                      <a routerLink="hoodiesforgirls" class="list-group-item list-group-item-action">Hoodies</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                    <div class="list-group list-group-flush">
+                      <h5>APPAREL BOTTOMS FOR GIRLS</h5>
+                      <a routerLink="shortforgirls" class="list-group-item list-group-item-action">Shorts</a>
+                      <a routerLink="joggerforgirls" class="list-group-item list-group-item-action">Joggers</a>
+                      <a routerLink="caprisforgirls" class="list-group-item list-group-item-action">Capris</a>
+                      <a routerLink="leggingsforgirls" class="list-group-item list-group-item-action">Leggings</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover position-static">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+              aria-expanded="false" data-bs-auto-close="outside">
+              <a class="hoverLine">
+                ACCESSORIES
+              </a>
+            </a>
+            <!-- Dropdown menu -->
+            <div class="dropdown-menu w-auto mt-0 shadow" aria-labelledby="navbarDropdown"
+              style="border-top-left-radius: 0; border-top-right-radius: 0;">
+              <div class="container-fluid">
+                <div class="row my-4">
+                  <div class="col-md-6 col-lg-auto mb-3 mb-lg-0">
+                    <h5>MEN SOCKS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="" class="list-group-item list-group-item-action">Low Show</a>
+                      <a routerLink="" class="list-group-item list-group-item-action">No Show</a>
+                      <a routerLink="" class="list-group-item list-group-item-action">Ankle</a>
+                      <a routerLink="" class="list-group-item list-group-item-action">Calf Length</a>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="col-md-6 col-lg-auto mb-3 mb-lg-0">
+                    <h5>JUNIOR SOCKS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="" class="list-group-item list-group-item-action">Ankle Length Socks</a>
+                      <a routerLink="" class="list-group-item list-group-item-action">Calf Length Socks</a>
+                      <a routerLink="" class="list-group-item list-group-item-action">Knee Length Socks</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-auto mb-3 mb-md-0">
+                    <div class="list-group list-group-flush">
+                      <h5>TOWELS</h5>
+                      <a routerLink="" class="list-group-item list-group-item-action">Face</a>
+                      <a routerLink="" class="list-group-item list-group-item-action">Hand</a>
+                      <a routerLink="" class="list-group-item list-group-item-action">Bath</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-auto mb-3 mb-lg-0">
+                    <h5>WOMEN SOCKS</h5>
+                    <div class="list-group list-group-flush">
+                      <a routerLink="" class="list-group-item list-group-item-action">Low Show</a>
+                      <a routerLink="" class="list-group-item list-group-item-action">Ankle</a>
                     </div>
                   </div>
                 </div>
@@ -68,6 +250,8 @@
             </div>
           </li>
         </ul>
+
+        
         <!-- search  -->
         <form class="d-flex ms-auto">
           <div class="input-group">
@@ -75,6 +259,9 @@
             <button class="btn" type="submit">search</button>
           </div>
         </form>
+        <div class="loginbtn" style="padding-left: 7px;">
+          <a class="nav-link-2 " routerLink="login" routerLinkActive="active-link">SIGNUP</a>
+       </div>
         <!-- Left links -->
       </div>
       <!-- Collapsible wrapper -->
@@ -82,6 +269,4 @@
     <!-- Container wrapper -->
   </nav>
 </header>
-<div id="bodypart">
-  <router-outlet></router-outlet>
-</div>
+

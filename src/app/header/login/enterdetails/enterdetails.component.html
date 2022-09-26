@@ -1,0 +1,31 @@
+
+
+<!-- <form (submit)="onAddpost(postform)" #postform="ngForm"> 
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        
+        <input type="email" class="form-control" id="exampleInputEmail1" ngModel name="title" >
+        <br>
+        <input type="text"  class="form-control" ngModel name="content" >
+    </div>
+
+    <button type="submit" class="btn btn-theme" >Login</button>
+    <app-showdetails></app-showdetails>
+</form> -->
+
+<form (submit)="onAddpost(postform)" #postform="ngForm">
+    <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+    ngModel name="title" >
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+    ngModel name="content"></textarea>
+
+    <button type="submit" class="btn btn-theme" >Login</button>
+
+    <app-showdetails></app-showdetails>
+    </div>
+</form>

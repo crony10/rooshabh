@@ -5,7 +5,7 @@ const app = express();
 
 app.use((req,res,next) => {
     res.setHeader("Acess-Control-Allow-Origin","*");
-    res.setHeader("Acess-Control-Allow-Header","Origin , X-Requested-With,Content-Type,Accept");
+    res.setHeader("Acess-Control-Allow-Headers","Origin , X-Requested-With,Content-Type,Accept");
     res.setHeader("Acess-Control-Allow-Method","GET,POST,PATCH,DELETE,OPTIONS");
 })
 
@@ -37,6 +37,6 @@ app.use("/post",(req , res , next) => {
         posts:posts
     });
     next
-});
+}); 
 
 module.exports = app;
