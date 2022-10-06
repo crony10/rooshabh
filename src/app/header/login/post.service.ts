@@ -9,7 +9,7 @@ import { isNull } from "@angular/compiler/src/output/output_ast";
 
 @Injectable({providedIn: 'root'})
 export class postsService{
-    private posts: post[] = [];
+    private posts!: post[];
     private postUpdated = new Subject<post[]>();
 
     constructor(private http: HttpClient) {}
@@ -18,7 +18,7 @@ export class postsService{
     getPosts(){
         this.http.get<{message: string,posts: post }>('http://localhost:3000/post')
         .subscribe((postData) => {
-            this.posts = postData.posts;
+            this.posts.push( postData.posts);
             this.postUpdated.next([...this.posts]);
         });
     }
