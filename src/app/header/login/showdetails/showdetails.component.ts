@@ -1,5 +1,5 @@
-import { Component,OnDestroy,OnInit} from '@angular/core';
-import { post } from '../post.model';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Post } from '../post.model';
 import { Subscription } from 'rxjs';
 import { postsService } from '../post.service';
 
@@ -14,22 +14,28 @@ export class ShowdetailsComponent implements OnInit, OnDestroy {
   //   { title: "hii" , content: "this is second"}
   // ];
 
-  posts: post[]= [];
+  posts: Post[] = [{
+    id: "fadf12421l",
+    title: "sample",
+    content: "sample",
+  },];
   private postsSub: Subscription = new Subscription;
-  
+
 
   constructor(public postsService: postsService) {
 
   }
   ngOnInit() {
     this.postsService.getPosts();
-    this.postsSub = this.postsService.getPostUpdateListener().subscribe((posts: post[]) => {
-      this.posts= posts;
-    });
+    this.postsSub = this.postsService.getPostUpdateListener().
+      subscribe((postsData: Post[]) => {
+        this.posts = postsData;
+      });
+    console.log("this is the posts from showDetails component " + this.posts);
   }
 
-  ngOnDestroy(){
-      this.postsSub.unsubscribe();
+  ngOnDestroy() {
+    this.postsSub.unsubscribe();
   }
 }
 
